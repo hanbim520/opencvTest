@@ -44,10 +44,10 @@ static void read_csv(const string& filename, vector<Mat>& images, vector<int>& l
 
 DetectFaceInfo::DetectFaceInfo()
 {
-    faceCascadeName = "/Users/abc/Desktop/opencvTest/haarcascades/haarcascade_frontalface_alt.xml";
-    eyeCascadeName = "/Users/abc/Desktop/opencvTest/haarcascades/haarcascade_eye_tree_eyeglasses.xml";
-    mouthCascadeName = "/Users/abc/Desktop/opencvTest/haarcascades/haarcascade_mcs_mouth.xml";
-    noseCascadeName = "/Users/abc/Desktop/opencvTest/haarcascades/haarcascade_mcs_nose.xml";
+    faceCascadeName = "/Users/abc/work/opencvTest/haarcascades/haarcascade_frontalface_alt.xml";
+    eyeCascadeName = "/Users/abc/work/opencvTest/haarcascades/haarcascade_eye_tree_eyeglasses.xml";
+    mouthCascadeName = "/Users/abc/work/opencvTest/haarcascades/haarcascade_mcs_mouth.xml";
+    noseCascadeName = "/Users/abc/work/opencvTest/haarcascades/haarcascade_mcs_nose.xml";
     
     scale = 1.3;
     

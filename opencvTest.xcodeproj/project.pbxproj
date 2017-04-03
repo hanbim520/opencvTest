@@ -184,6 +184,7 @@
 		28B56E441E9163FB0041F7BC /* identify.c in Sources */ = {isa = PBXBuildFile; fileRef = 28B56E3E1E9163FB0041F7BC /* identify.c */; };
 		28B56E451E9163FB0041F7BC /* quirc.c in Sources */ = {isa = PBXBuildFile; fileRef = 28B56E401E9163FB0041F7BC /* quirc.c */; };
 		28B56E461E9163FB0041F7BC /* version_db.c in Sources */ = {isa = PBXBuildFile; fileRef = 28B56E421E9163FB0041F7BC /* version_db.c */; };
+		28BA2C3F1E92866F00577606 /* SpeekRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BA2C3D1E92866F00577606 /* SpeekRecognition.cpp */; };
 		28E4959E1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E4959C1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp */; };
 		28E497D61E9207C9007D1CD6 /* AztecDetectorResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E496FE1E9207C9007D1CD6 /* AztecDetectorResult.cpp */; };
 		28E497D71E9207C9007D1CD6 /* AztecReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E497001E9207C9007D1CD6 /* AztecReader.cpp */; };
@@ -492,6 +493,8 @@
 		28B56E401E9163FB0041F7BC /* quirc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quirc.c; sourceTree = "<group>"; };
 		28B56E411E9163FB0041F7BC /* quirc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quirc.h; sourceTree = "<group>"; };
 		28B56E421E9163FB0041F7BC /* version_db.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version_db.c; sourceTree = "<group>"; };
+		28BA2C3D1E92866F00577606 /* SpeekRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpeekRecognition.cpp; sourceTree = "<group>"; };
+		28BA2C3E1E92866F00577606 /* SpeekRecognition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpeekRecognition.hpp; sourceTree = "<group>"; };
 		28E4959C1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QRDetectInfoDencoder.cpp; sourceTree = "<group>"; };
 		28E4959D1E92009F007D1CD6 /* QRDetectInfoDencoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QRDetectInfoDencoder.hpp; sourceTree = "<group>"; };
 		28E496FE1E9207C9007D1CD6 /* AztecDetectorResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AztecDetectorResult.cpp; sourceTree = "<group>"; };
@@ -879,6 +882,7 @@
 		28321CF01E88BC6700DA7B7D /* src */ = {
 			isa = PBXGroup;
 			children = (
+				28BA2C3C1E9284E800577606 /* SpeekRecognition */,
 				28E498381E920966007D1CD6 /* bigint */,
 				28E496FC1E9207C9007D1CD6 /* zxing */,
 				2849C8131E8D21C200C55404 /* QR */,
@@ -1151,6 +1155,15 @@
 				28B56E421E9163FB0041F7BC /* version_db.c */,
 			);
 			name = libDencodeCpp;
+			sourceTree = "<group>";
+		};
+		28BA2C3C1E9284E800577606 /* SpeekRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				28BA2C3D1E92866F00577606 /* SpeekRecognition.cpp */,
+				28BA2C3E1E92866F00577606 /* SpeekRecognition.hpp */,
+			);
+			name = SpeekRecognition;
 			sourceTree = "<group>";
 		};
 		28E496FC1E9207C9007D1CD6 /* zxing */ = {
@@ -1695,6 +1708,7 @@
 				28E498171E9207C9007D1CD6 /* BitMatrixParser.cpp in Sources */,
 				28E498051E9207C9007D1CD6 /* MultiDetector.cpp in Sources */,
 				285E1F3A1E88ED3500E8FBF9 /* haarcascade_upperbody.xml in Sources */,
+				28BA2C3F1E92866F00577606 /* SpeekRecognition.cpp in Sources */,
 				28E497D91E9207C9007D1CD6 /* Detector.cpp in Sources */,
 				285E1F1E1E88ED2E00E8FBF9 /* haarcascade_eye_tree_eyeglasses.xml in Sources */,
 				285E1F1F1E88ED2E00E8FBF9 /* haarcascade_frontalface_alt.xml in Sources */,
@@ -1854,6 +1868,7 @@
 		28321C321E88295000DA7B7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 8LQF3TG3YX;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
@@ -1871,6 +1886,7 @@
 		28321C331E88295000DA7B7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 8LQF3TG3YX;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include,
