@@ -16,9 +16,9 @@ using cv::face::createLBPHFaceRecognizer;
 
 FaceRecognizerWrap::FaceRecognizerWrap()
 {
-    EigenfacesModel = createEigenFaceRecognizer(0,1);
-    FisherfacesModel = createFisherFaceRecognizer(0,1);
-    LBPHModel = createLBPHFaceRecognizer(1, 8, 8, 8, 80.0);
+    EigenFacesModel = createEigenFaceRecognizer(0,1);
+    FisherFacesModel = createFisherFaceRecognizer(0,1);
+    LBPHFacesModel = createLBPHFaceRecognizer(1, 8, 8, 8, 80.0);
 }
 
 FaceRecognizerWrap::~FaceRecognizerWrap()
@@ -34,48 +34,48 @@ void FaceRecognizerWrap::LoadFrame(cv::Mat frame,int label)
 
 void FaceRecognizerWrap::InitLBPHTrain()
 {
-    LBPHModel->train(frames, labels);
+    LBPHFacesModel->train(frames, labels);
 }
 
 void FaceRecognizerWrap::InitEigenTrain()
 {
-    EigenfacesModel->train(frames, labels);
+    EigenFacesModel->train(frames, labels);
 }
 
 void FaceRecognizerWrap::InitFisherTrain()
 {
-    FisherfacesModel->train(frames, labels);
+    FisherFacesModel->train(frames, labels);
 }
 
 int FaceRecognizerWrap::EigenPredict(InputArray frame)
 {
-    return EigenfacesModel->predict(frame);
+    return EigenFacesModel->predict(frame);
 }
 
 int FaceRecognizerWrap::FisherPredict(InputArray frame)
 {
-    return FisherfacesModel->predict(frame);
+    return FisherFacesModel->predict(frame);
 }
 
 int FaceRecognizerWrap::LBPHPredict(InputArray frame)
 {
-    return LBPHModel->predict(frame);
+    return LBPHFacesModel->predict(frame);
 }
 
 void FaceRecognizerWrap::EigenPredict(InputArray src, int &label, double &confidence)
 { 
-    EigenfacesModel->predict(src, label, confidence);
+    EigenFacesModel->predict(src, label, confidence);
 }
 
 void FaceRecognizerWrap::FisherPredict(InputArray src, int &label, double &confidence)
 {
-    FisherfacesModel->predict(src, label, confidence);
+    FisherFacesModel->predict(src, label, confidence);
 }
 
 
 void FaceRecognizerWrap::LBPHPredict(InputArray src, int &label, double &confidence)
 {
-    LBPHModel->predict(src, label, confidence);
+    LBPHFacesModel->predict(src, label, confidence);
 }
 
 

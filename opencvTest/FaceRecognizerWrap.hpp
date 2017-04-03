@@ -26,9 +26,9 @@ public:
     ~FaceRecognizerWrap();
     
 private:
-    Ptr<FaceRecognizer> EigenfacesModel;
-    Ptr<FaceRecognizer> FisherfacesModel;
-    Ptr<FaceRecognizer> LBPHModel;
+    Ptr<FaceRecognizer> EigenFacesModel;
+    Ptr<FaceRecognizer> FisherFacesModel;
+    Ptr<FaceRecognizer> LBPHFacesModel;
     vector<int>labels;
     vector<Mat> frames;
     
@@ -44,6 +44,10 @@ public:
     void EigenPredict(InputArray src, int &label, double &confidence);
     void FisherPredict(InputArray src, int &label, double &confidence);
     void LBPHPredict(InputArray src, int &label, double &confidence);
+    
+    Ptr<FaceRecognizer> GetEigenfacesModel(){return EigenFacesModel;}
+    Ptr<FaceRecognizer> GetFisherFacesModel(){return FisherFacesModel;}
+    Ptr<FaceRecognizer> GetLBPHFacesModel(){return LBPHFacesModel;}
 };
 
 

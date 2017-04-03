@@ -68,7 +68,7 @@ void QRDetectInfoDencoder::QRDecode(cv::Mat frame)
         
         if (resultPointCount > 0) {
             
-            std::cout <<"qrcode result" << result->getText()->getText() <<std::endl;
+            std::cout <<"qrcode result:" << result->getText()->getText() <<std::endl;
             // Draw text
             putText(frame, result->getText()->getText(), toCvPoint(result->getResultPoints()[0]), FONT_HERSHEY_PLAIN, 1, Scalar( 110, 220, 0 ));
             
