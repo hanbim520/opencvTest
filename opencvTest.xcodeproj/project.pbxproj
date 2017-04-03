@@ -185,6 +185,9 @@
 		28B56E451E9163FB0041F7BC /* quirc.c in Sources */ = {isa = PBXBuildFile; fileRef = 28B56E401E9163FB0041F7BC /* quirc.c */; };
 		28B56E461E9163FB0041F7BC /* version_db.c in Sources */ = {isa = PBXBuildFile; fileRef = 28B56E421E9163FB0041F7BC /* version_db.c */; };
 		28BA2C3F1E92866F00577606 /* SpeekRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BA2C3D1E92866F00577606 /* SpeekRecognition.cpp */; };
+		28BA2C411E9287F300577606 /* libportaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BA2C401E9287F300577606 /* libportaudio.a */; };
+		28BA2C431E9287FA00577606 /* libportaudio.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BA2C421E9287FA00577606 /* libportaudio.2.dylib */; };
+		28BA2C451E9287FF00577606 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BA2C441E9287FF00577606 /* libportaudio.dylib */; };
 		28E4959E1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E4959C1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp */; };
 		28E497D61E9207C9007D1CD6 /* AztecDetectorResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E496FE1E9207C9007D1CD6 /* AztecDetectorResult.cpp */; };
 		28E497D71E9207C9007D1CD6 /* AztecReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E497001E9207C9007D1CD6 /* AztecReader.cpp */; };
@@ -495,6 +498,9 @@
 		28B56E421E9163FB0041F7BC /* version_db.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version_db.c; sourceTree = "<group>"; };
 		28BA2C3D1E92866F00577606 /* SpeekRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpeekRecognition.cpp; sourceTree = "<group>"; };
 		28BA2C3E1E92866F00577606 /* SpeekRecognition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpeekRecognition.hpp; sourceTree = "<group>"; };
+		28BA2C401E9287F300577606 /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = ../../../../usr/local/lib/libportaudio.a; sourceTree = "<group>"; };
+		28BA2C421E9287FA00577606 /* libportaudio.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.2.dylib; path = ../../../../usr/local/lib/libportaudio.2.dylib; sourceTree = "<group>"; };
+		28BA2C441E9287FF00577606 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
 		28E4959C1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QRDetectInfoDencoder.cpp; sourceTree = "<group>"; };
 		28E4959D1E92009F007D1CD6 /* QRDetectInfoDencoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QRDetectInfoDencoder.hpp; sourceTree = "<group>"; };
 		28E496FE1E9207C9007D1CD6 /* AztecDetectorResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AztecDetectorResult.cpp; sourceTree = "<group>"; };
@@ -718,8 +724,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E49A0D1E920B26007D1CD6 /* libiconv.2.4.0.tbd in Frameworks */,
+				28BA2C431E9287FA00577606 /* libportaudio.2.dylib in Frameworks */,
 				285E1EA41E88E23C00E8FBF9 /* libopencv_datasets.3.2.0.dylib in Frameworks */,
+				28BA2C411E9287F300577606 /* libportaudio.a in Frameworks */,
 				285E1F031E88E23C00E8FBF9 /* libopencv_videostab.dylib in Frameworks */,
+				28BA2C451E9287FF00577606 /* libportaudio.dylib in Frameworks */,
 				285E1F0A1E88E23C00E8FBF9 /* libopencv_xobjdetect.3.2.0.dylib in Frameworks */,
 				285E1EBA1E88E23C00E8FBF9 /* libopencv_fuzzy.3.2.dylib in Frameworks */,
 				285E1EEA1E88E23C00E8FBF9 /* libopencv_stitching.3.2.dylib in Frameworks */,
@@ -1555,6 +1564,9 @@
 		28E49A0B1E920B26007D1CD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28BA2C441E9287FF00577606 /* libportaudio.dylib */,
+				28BA2C421E9287FA00577606 /* libportaudio.2.dylib */,
+				28BA2C401E9287F300577606 /* libportaudio.a */,
 				28E49A0C1E920B26007D1CD6 /* libiconv.2.4.0.tbd */,
 			);
 			name = Frameworks;
