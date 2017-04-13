@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28203BF81E9B28220021B27E /* mainc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28203BF61E9B28220021B27E /* mainc.cpp */; };
 		28321C2E1E88295000DA7B7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28321C2D1E88295000DA7B7D /* main.cpp */; };
 		2849C7E91E8AB28E00C55404 /* DetectFaceInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2849C7E71E8AB28E00C55404 /* DetectFaceInfo.cpp */; };
 		2849C7EC1E8ABAE100C55404 /* FaceRecognizerWrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2849C7EA1E8ABAE100C55404 /* FaceRecognizerWrap.cpp */; };
@@ -188,6 +189,7 @@
 		28BA2C411E9287F300577606 /* libportaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BA2C401E9287F300577606 /* libportaudio.a */; };
 		28BA2C431E9287FA00577606 /* libportaudio.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BA2C421E9287FA00577606 /* libportaudio.2.dylib */; };
 		28BA2C451E9287FF00577606 /* libportaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BA2C441E9287FF00577606 /* libportaudio.dylib */; };
+		28D2FED91E9F72B600D22280 /* ObjectRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28D2FED71E9F72B600D22280 /* ObjectRecognition.cpp */; };
 		28E4959E1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E4959C1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp */; };
 		28E497D61E9207C9007D1CD6 /* AztecDetectorResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E496FE1E9207C9007D1CD6 /* AztecDetectorResult.cpp */; };
 		28E497D71E9207C9007D1CD6 /* AztecReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E497001E9207C9007D1CD6 /* AztecReader.cpp */; };
@@ -306,6 +308,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		28203BF61E9B28220021B27E /* mainc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainc.cpp; sourceTree = "<group>"; };
+		28203BF71E9B28220021B27E /* mainc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mainc.hpp; sourceTree = "<group>"; };
 		28321C2A1E88295000DA7B7D /* opencvTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opencvTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28321C2D1E88295000DA7B7D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		28321CF61E88BD8000DA7B7D /* haarcascade_eye.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
@@ -501,6 +505,7 @@
 		28BA2C401E9287F300577606 /* libportaudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportaudio.a; path = ../../../../usr/local/lib/libportaudio.a; sourceTree = "<group>"; };
 		28BA2C421E9287FA00577606 /* libportaudio.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.2.dylib; path = ../../../../usr/local/lib/libportaudio.2.dylib; sourceTree = "<group>"; };
 		28BA2C441E9287FF00577606 /* libportaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libportaudio.dylib; path = ../../../../usr/local/lib/libportaudio.dylib; sourceTree = "<group>"; };
+		28D2FED71E9F72B600D22280 /* ObjectRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectRecognition.cpp; sourceTree = "<group>"; };
 		28E4959C1E92009F007D1CD6 /* QRDetectInfoDencoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QRDetectInfoDencoder.cpp; sourceTree = "<group>"; };
 		28E4959D1E92009F007D1CD6 /* QRDetectInfoDencoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QRDetectInfoDencoder.hpp; sourceTree = "<group>"; };
 		28E496FE1E9207C9007D1CD6 /* AztecDetectorResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AztecDetectorResult.cpp; sourceTree = "<group>"; };
@@ -884,6 +889,9 @@
 			children = (
 				28321CF01E88BC6700DA7B7D /* src */,
 				28321C2D1E88295000DA7B7D /* main.cpp */,
+				28203BF61E9B28220021B27E /* mainc.cpp */,
+				28203BF71E9B28220021B27E /* mainc.hpp */,
+				28D2FED71E9F72B600D22280 /* ObjectRecognition.cpp */,
 			);
 			path = opencvTest;
 			sourceTree = "<group>";
@@ -1679,6 +1687,7 @@
 				28B56E461E9163FB0041F7BC /* version_db.c in Sources */,
 				28E497FC1E9207C9007D1CD6 /* Version.cpp in Sources */,
 				285E1F301E88ED3500E8FBF9 /* haarcascade_frontalface_alt_tree.xml in Sources */,
+				28203BF81E9B28220021B27E /* mainc.cpp in Sources */,
 				28E498071E9207C9007D1CD6 /* QRCodeMultiReader.cpp in Sources */,
 				28E497F51E9207C9007D1CD6 /* BitMatrixParser.cpp in Sources */,
 				28E498081E9207C9007D1CD6 /* MultiFormatReader.cpp in Sources */,
@@ -1715,6 +1724,7 @@
 				28E498141E9207C9007D1CD6 /* UPCAReader.cpp in Sources */,
 				28E498011E9207C9007D1CD6 /* LuminanceSource.cpp in Sources */,
 				28E498281E9207C9007D1CD6 /* Detector.cpp in Sources */,
+				28D2FED91E9F72B600D22280 /* ObjectRecognition.cpp in Sources */,
 				28E497FA1E9207C9007D1CD6 /* Detector.cpp in Sources */,
 				285E1F391E88ED3500E8FBF9 /* haarcascade_smile.xml in Sources */,
 				28E498171E9207C9007D1CD6 /* BitMatrixParser.cpp in Sources */,
