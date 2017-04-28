@@ -1,7 +1,9 @@
-Face recognition
+Face recognition(opencv or caffe)
 QR recognition
+
 
 Need library:
 Opnencv 3.2
 portaudio
+caffe
 
