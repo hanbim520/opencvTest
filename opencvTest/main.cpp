@@ -9,9 +9,9 @@
 //int main( int argc, const char** argv )
 //{
 //    
-////    QRDetectInfoEncoder qRDetectInfo;
-////    qRDetectInfo.GenerateQR("www.baidunnnn.com");
-////    
+//    QRDetectInfoEncoder qRDetectInfo;
+//    qRDetectInfo.GenerateQR("www.baidunnnn.com");
+//    
 //    DetectFaceInfo detectFaceInfo;
 //    detectFaceInfo.StartCaptureFace();
 //    SpeekRecognition speek;

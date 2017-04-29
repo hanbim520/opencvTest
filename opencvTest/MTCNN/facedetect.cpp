@@ -587,6 +587,7 @@ vector< FaceDetector::BoundingBox > FaceDetector::Detect(const cv::Mat& img, con
     cv::waitKey();
     //end debug
 #endif
+    
     for(int i = 0; i < totalBoxes.size(); i++)
     {
         if(orient == ORIENT_UP){

@@ -16,7 +16,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
-//#define IMAGE_DEBUG
+// #define IMAGE_DEBUG
 
 #include <algorithm>
 #include <iosfwd>
